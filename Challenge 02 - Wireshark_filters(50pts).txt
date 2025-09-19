@@ -1,0 +1,16 @@
+Challenge Description (HTTP / Networking — Easy)
+
+Title: Web Greetings
+Category: Networking / HTTP
+Description (story-style):
+
+Welcome, junior cyber-warrior. You’ve stepped into the web realm. Somewhere, a web server whispered a secret in plain sight.
+Open the .pcap file, find the HTTP request/response, and inspect its payload. The first flag is hidden there.
+
+Hint: Use Wireshark → Apply display filter: http → Inspect packet bytes or follow the HTTP stream.
+The flag format is:
+
+3CS{CTF-Vers.2_httpstart}
+
+
+Points: 50 pts (easy, similar difficulty as first challenge)

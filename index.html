@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3CS Year-2 Mini CTF v2</title>
+<style>
+/* ----- General Styles ----- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0d8f7;
+    padding: 20px;
+    margin: 0;
+    transition: background 0.5s, color 0.5s;
+}
+h1 {
+    text-align: center;
+    color: #d8b9ff;
+    padding: 25px;
+    transition: color 0.3s, transform 0.3s;
+}
+h1:hover {
+    color: #fff;
+    transform: scale(1.02);
+}
+
+/* ----- Challenge Boxes ----- */
+.challenge {
+    background-color: #1a0a2a;
+    padding: 18px;
+    margin: 20px 0;
+    border-left: 4px solid #9b59b6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.challenge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.5);
+}
+.challenge h2 {
+    color: #d8b9ff;
+    margin: 0 0 10px 0;
+}
+
+/* ----- Links ----- */
+a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #e0d8f7;
+}
+
+/* ----- Form Styles ----- */
+form {
+    background-color: #1a0a2a;
+    padding: 25px;
+    margin-top: 30px;
+    border-left: 4px solid #9b59b6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.5);
+}
+form h2 {
+    color: #d8b9ff;
+    margin-bottom: 15px;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #4b0082;
+    border-radius: 8px;
+    background-color: #0a0a0a;
+    color: #e0d8f7;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
+}
+input[type="submit"] {
+    background-color: #9b59b6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #d8b9ff;
+    color: #1a0a2a;
+    transform: scale(1.05);
+}
+
+/* ----- Smooth Scroll ----- */
+html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+
+<h1>3CS Year-2 Mini CTF v2</h1>
+
+<div class="challenge">
+  <h2>Challenge 01 — Enter the Arena</h2>
+  <a href="01_readme.txt" target="_blank">Download README.txt</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 02 — Ping Me</h2>
+  <a href="02_https_flag.pcap" target="_blank">Download HTTPS PCAP</a> |
+  <a href="Challenge 02 - Wireshark_filters(50pts).txt" target="_blank">Download README</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 03 — Hidden Web Source</h2>
+  <a href="03_hidden.html" target="_blank">Open Hidden Page</a> |
+  <a href="03_flag.txt" target="_blank">Download Hidden Flag File</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 04 — Cookie Monster</h2>
+  <a href="04_cookies.html" target="_blank">Open Page</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 05 — JS Object in Console</h2>
+  <a href="05_jsconsole.html" target="_blank">Open Page</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 06 — SQL Injection</h2>
+  <a href="06_sqli.html" target="_blank">Open Vulnerable Login Page</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 07 — DSA Beginner</h2>
+  <a href="07_array_dsa.py" target="_blank">Download Python Script</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 08 — Python Fun</h2>
+  <a href="08_python_flag.py" target="_blank">Download Python Script</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 09 — Tree Traversal</h2>
+  <a href="09_tree_traversal.py" target="_blank">Download Python Script</a>
+</div>
+
+<div class="challenge">
+  <h2>Challenge 10 — Forensics Medium</h2>
+  <a href="10_forensics.zip" target="_blank">Download Forensics Challenge</a>
+</div>
+
+<!-- Submission Form -->
+<form action="https://forms.gle/DmjTUQoonqR4CVC99" method="GET" target="_blank">
+  <h2>Submit Your Flags</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="entry.1234567890" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="entry.0987654321" required>
+
+  <label for="flags">Flags (comma-separated):</label>
+  <input type="text" id="flags" name="entry.1122334455" placeholder="3CS{...},3CS{...},..." required>
+
+  <input type="submit" value="Submit Flags">
+</form>
+
+</body>
+</html>
